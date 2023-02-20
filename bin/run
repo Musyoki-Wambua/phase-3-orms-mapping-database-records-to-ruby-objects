@@ -3,6 +3,9 @@
 require 'pry'
 require_relative '../config/environment'
 
+Song.find_by_name("Hello")
+
+
 def reset_database
   Song.drop_table
   Song.create_table
